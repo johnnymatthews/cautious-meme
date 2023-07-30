@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="bootstrap.min.css" rel="stylesheet">
+        <style>
+html, body {
+    height: 100%;
+}
+        #topbar {
+        }
+        #page-content {
+            flex: 1 0 auto;
+            min-height: 80vh;
+            padding: 0; 
+        }
+        #sidebar {
+
+        }
+        #sticky-footer {
+            flex-shrink: none;
+        }
+        </style>
+        <title>Bootstrap Layout</title>
+    </head>
+    <body class="d-flex flex-column">
+
+        <header class="container-fluid bg-primary p-1" id="topbar">
+            <div class="row align-items-center">
+                <div class="col-2 text-start">
+                    <h3>Logo</h3>
+                </div>
+                <div class="col-10">
+                    <div class="input-group" id="search-bar">
+                        <input type="text" class="form-control" placeholder="Search" id="search-bar-input">
+                        <button class="btn btn-outline-secondary" type="button" id="search-bar-button">Go</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="container-fluid" id="page-content">
+            <div class="row">
+                <nav class="col-md-3 bg-success p-4" id="sidebar">
+                    <div class="sidebar-menu-section">
+                        <h4>In the car</h4>
+                        <ul class="pl-4">
+                            <li>I just can't wait</li>
+                            <li>To pick</li>
+                            <li>Her up</li>
+                            <li>For our very first</li>
+                            <li>Date</li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-menu-section">
+                        <h4>In the car</h4>
+                        <ul class="pl-4">
+                            <li>I just can't wait</li>
+                            <li>To pick</li>
+                            <li>Her up</li>
+                            <li>For our very first</li>
+                            <li>Date</li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <section class="col-md p-5">
+                    <h1>
+                        Fancy display heading
+                        <small class="text-body-secondary">With faded secondary text</small>
+                    </h1>
+                    <p class="lead">A short introduction to Blink-182, and an explainer as to why they're the greatest band in California. I was gonna say <i>the world</i> but that seemed a bit too presumptuous.</p>
+                    <h2>Table of contents</h2>
+                    <ul>
+                        <li>are unaffected by this style</li>
+                        <li>will still show a bullet</li>
+                        <li>and have appropriate left margin</li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non magna sit amet augue maximus scelerisque. Nullam a lorem a nunc rutrum tempor at ac nisl. Vestibulum a ligula eu lacus faucibus eleifend a non mi. Donec suscipit tincidunt nunc, id fringilla turpis tincidunt a. Suspendisse sit amet ligula a nisl consectetur sollicitudin. Donec et mi ut augue tincidunt fringilla nec id tortor.</p>
+                    <figure>
+                        <blockquote class="blockquote">
+                            <p>A well-known quote, contained in a blockquote element.</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            Someone famous in <cite title="Source Title">Source Title</cite>
+                        </figcaption>
+                    </figure>
+                    <img class="img-fluid rounded mx-auto d-block my-2" src="./images/350.jpg" alt="Placeholder Image">
+                    <p>Quisque nec sagittis erat. Integer at neque vel mi elementum ultrices. Donec sed massa vitae velit volutpat laoreet ac a nunc. Mauris semper, quam eget consequat tristique, sem dolor tincidunt tortor, sit amet condimentum elit arcu sit amet magna. Sed sit amet dictum nisl, at semper turpis. Phasellus ac feugiat turpis. Integer rutrum est at iaculis suscipit.</p>
+                    <table class="table table-dark table-striped">
+                        <thead>
+                            <tr>
+                                <th>Header 1</th>
+                                <th>Header 2</th>
+                                <th>Header 3</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Data 1</td>
+                                <td>Data 2</td>
+                                <td>Data 3</td>
+                            </tr>
+                            <tr>
+                                <td>Data 4</td>
+                                <td>Data 5</td>
+                                <td>Data 6</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>Nulla facilisi. Quisque at mollis sem. Nullam eget massa nec purus vestibulum dapibus. Cras et lacus neque. Morbi suscipit metus vel ligula interdum sollicitudin. Morbi non semper ante, sed semper velit. Aenean at cursus nisl.</p>
+                    <ul>
+                        <li>are unaffected by this style</li>
+                        <li>will still show a bullet</li>
+                        <li>and have appropriate left margin</li>
+                    </ul>
+                </section>
+
+            </div>
+        </main>
+        <footer class="container-fluid py-2 bg-danger" id="sticky-footer">
+            <div class="row">
+                <div class="col-md-6 text-start">
+                    <h2>Footer logo</h2>
+                </div>
+                <div class="col-md-3">
+                    <h3>Sections</h3>
+                    <ul class="pl-4">
+                        <li>Dude ranch</li>
+                        <li>Cheshire cat</li>
+                        <li>Nine</li>
+                        <li>California</li>
+                        <li>Neighborhoods</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Contact</h3>
+                    <ul class="pl-4">
+                        <li>GitHub</li>
+                        <li>Discord</li>
+                        <li>IRC</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script src="bootstrap.bundle.min.js"></script>
+    </body>
+</html>
+
